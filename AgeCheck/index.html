@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Checker</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+	footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+    div {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      min-width: 320px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>Age Eligibility Check</h2>
+
+    <form action="AgeServlet" method="post">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required>
+
+      <button type="submit">Check Eligibility</button>
+    </form>
+  </div>
+<footer>
+  24071A05M4 || VINDHYAD @ AllRightsReserved
+</footer>
+</body>
+</html>
