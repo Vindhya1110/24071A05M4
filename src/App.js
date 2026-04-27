@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import ApplyJob from './pages/ApplyJob';
@@ -113,6 +114,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to="/job-listings" />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
